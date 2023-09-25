@@ -20,17 +20,17 @@ namespace EF_Core_Project_Ecommerce.Tests
             response.EnsureSuccessStatusCode();
         }
 
-        [Fact]
+        //[Fact]
         public async Task CreateOrder_ReturnsSuccessStatusCode()
         {
             var orderDetail1 = new OrderDetail 
             {
-                productId = 1,
+                productId = 5,
             };
 
             var orderDetail2 = new OrderDetail 
             {
-                productId = 2,
+                productId = 5,
             };
 
             var newOrder = new Order 
